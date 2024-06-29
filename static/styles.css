@@ -1,0 +1,46 @@
+/* static/styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=6144&h=4096&dpr=1') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.content {
+    text-align: center;
+    color: #E0E0E0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E0E0E0;
+    color: #121212;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content .btn:hover {
+    background-color: #CCCCCC;
+    color: #121212;
+}

@@ -1,0 +1,30 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <!-- Additional CSS files can be added here -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 style="margin-bottom: 20px;"><a href="{{ url_for('index') }}" style="color: inherit; text-decoration: none;">Job Search Tool</a></h1>
+        </div>
+        <div class="login">
+            <a href="{{ url_for('login') }}" class="btn">Login</a>
+        </div>
+    </header>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        This Project is not yet Completed | If you want to contribute please contact me: <a href="http://www.linkedin.com/in/gapdramatic">LinkedIn</a>
+    </footer>
+</body>
+</html>

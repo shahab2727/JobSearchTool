@@ -1,0 +1,52 @@
+/* static/login.css */
+
+.form-container {
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px;
+    margin: 100px auto; /* Adjust margin for vertical centering */
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #E0E0E0;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #E0E0E0;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 45px;
+    background-color: #E0E0E0;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #CCCCCC;
+    color: #121212;
+}
