@@ -8,10 +8,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = os.getenv('SECRET_KEY')
+app.secret_key = os.environ.get('FLASK_SECRET_KEY')
 
 # Configure MongoDB
-mongo_uri = os.getenv('MONGO_URI')
+mongo_uri = os.environ.get('MONGO_URI')
 
 if not mongo_uri:
     raise ValueError("MongoDB URI is not set in the environment variables.")
