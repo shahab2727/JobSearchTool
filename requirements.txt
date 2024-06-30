@@ -3,4 +3,4 @@ Flask-PyMongo
 bcrypt
 python-dotenv
 Flask-OAuthlib 
-Flask-Login
+Flask-Logi
