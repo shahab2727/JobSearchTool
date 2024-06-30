@@ -29,6 +29,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt  # Ensure this matches your requirements file
+          - name: Set environment variables
+          run: |
+            echo "FLASK_SECRET_KEY=${{ secrets.FLASK_SECRET_KEY }}" >> $GITHUB_ENV
+            echo "MONGO_URI=${{ secrets.MONGO_URI }}" >> $GITHUB_ENV
+
 
       - name: Build Flask app
         run: |
